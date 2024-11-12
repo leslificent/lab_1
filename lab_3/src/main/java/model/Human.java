@@ -1,0 +1,24 @@
+package main.java.model;
+
+public class Human {
+    protected String firstName;
+    protected String lastName;
+    protected String patronymic;
+    protected Sex sex;
+
+    public Human(String firstName, String lastName, String patronymic, Sex sex) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.patronymic = patronymic;
+        this.sex = sex;
+    }
+
+    // Getters and setters
+    public String getFullName() {
+        return firstName + " " + lastName + " " + patronymic;
+    }
+
+    public Sex getSex() {
+        return sex;
+    }
+}

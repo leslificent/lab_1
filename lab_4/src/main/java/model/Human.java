@@ -1,6 +1,10 @@
-package main.java.model;
+package model;
 
+import lombok.EqualsAndHashCode;
 
+import java.util.Objects;
+
+@EqualsAndHashCode
 public class Human {
     protected String firstName;
     protected String lastName;
@@ -22,4 +26,5 @@ public class Human {
     public Sex getSex() {
         return sex;
     }
+
 }

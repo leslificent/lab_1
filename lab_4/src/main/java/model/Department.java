@@ -1,6 +1,10 @@
-package main.java.model;
+package model;
+
+import lombok.EqualsAndHashCode;
+
 import java.util.List;
 
+@EqualsAndHashCode
 public class Department {
     private String name;
     private Human head;

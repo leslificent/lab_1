@@ -1,6 +1,10 @@
-package main.java.model;
+package model;
+
+import lombok.EqualsAndHashCode;
+
 import java.util.List;
 
+@EqualsAndHashCode
 public class University {
     private String name;
     private Human head;
@@ -24,4 +28,5 @@ public class University {
     public List<Faculty> getFaculties() {
         return faculties;
     }
+
 }

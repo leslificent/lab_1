@@ -1,16 +1,18 @@
-package main.java.controller;
-import main.java.model.Group;
-import main.java.model.Human;
-import main.java.model.Department;
-import main.java.model.Student;
+package controller;
+
+
+import model.Department;
+import model.Group;
+import model.Human;
+import model.Student;
 
 import java.util.List;
 
-public class DepartmentCreator implements Creator<Department, Group> {
+public class DepartmentCreator implements Creator<Department, Group>{
     private final GroupCreator groupCreator;
 
     public DepartmentCreator() {
-        this.groupCreator = new GroupCreator();
+        this.groupCreator = new GroupCreator(); // Створення контролера для кафедр
     }
 
     @Override

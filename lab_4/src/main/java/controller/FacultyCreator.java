@@ -1,9 +1,11 @@
-package main.java.controller;
-import main.java.model.Group;
-import main.java.model.Human;
-import main.java.model.Department;
-import main.java.model.Faculty;
+package controller;
 
+
+
+import model.Department;
+import model.Faculty;
+import model.Group;
+import model.Human;
 
 import java.util.List;
 
@@ -11,7 +13,7 @@ public class FacultyCreator implements Creator<Faculty, Department> {
     private final DepartmentCreator departmentCreator;
 
     public FacultyCreator() {
-        this.departmentCreator = new DepartmentCreator();
+        this.departmentCreator = new DepartmentCreator(); // Створення контролера для кафедр
     }
 
     @Override
@@ -21,6 +23,6 @@ public class FacultyCreator implements Creator<Faculty, Department> {
 
     // Можливість створення кафедри
     public Department createDepartment(String name, Human head, List<Group> groups) {
-        return departmentCreator.create(name, head, groups);
+        return departmentCreator.create(name, head, groups); // Делегуємо створення кафедри нижчому рівню
     }
 }

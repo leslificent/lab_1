@@ -1,6 +1,5 @@
-package main.java;
-import main.java.controller.*;
-import main.java.model.*;
+import controller.*;
+import model.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,7 +26,7 @@ public class Run {
         Random random = new Random();
 
         for (int i = 0; i < count; i++) {
-            String firstName = "Name" + i;
+            String firstName = "Name" + i; // Замінити на рандомну генерацію імен
             String lastName = "Surname" + i;
             String middleName = "Middle" + i;
             Sex gender = random.nextBoolean() ? Sex.MALE : Sex.FEMALE;
@@ -38,7 +37,26 @@ public class Run {
 
         return students;
     }
-    public static void createTypicalUniversity(){
+
+    public static void printUniversityDetails(University university){
+        System.out.println("Університет: " + university.getName());
+        System.out.println("Голова університету: " + university.getHead());
+        for (Faculty faculty : university.getFaculties()) {
+            System.out.println("Факультет: " + faculty.getName());
+            System.out.println("Голова факультету: " + faculty.getHead());
+            for (Department department : faculty.getDepartments()) {
+                System.out.println("Кафедра: " + department.getName());
+                System.out.println("Голова кафедри: " + department.getHead());
+                for (Group group : department.getGroups()) {
+                    System.out.println("Група: " + group.getName());
+                    System.out.println("Голова групи: " + group.getHead());
+                }
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        // Створюємо об'єкти контролерів
         UniversityCreator universityCreator = new UniversityCreator();
         FacultyCreator facultyCreator = new FacultyCreator();
         DepartmentCreator departmentCreator = new DepartmentCreator();
@@ -65,6 +83,9 @@ public class Run {
         Group prtGroup5 = groupCreator.create("101-21-1", generateRandomHuman(), generateRandomStudents(20));
         Group prtGroup6 = groupCreator.create("101-21-1", generateRandomHuman(), generateRandomStudents(20));
 
+        List<Group> groups = List.of(fitGroup1, fitGroup2, fitGroup3,fitGroup4, fitGroup5, fitGroup6,
+                philGroup1, philGroup2, philGroup3, philGroup4, philGroup5, philGroup6,
+                prtGroup1, prtGroup2, prtGroup3, prtGroup4, prtGroup5, prtGroup6);
 
         Department ComputerScience = departmentCreator.create("Комп'ютерних наук", generateRandomHuman(), List.of(fitGroup1, fitGroup2));
         Department SystemAnalysis = departmentCreator.create("Системного аналізу", generateRandomHuman(), List.of(fitGroup3, fitGroup4));
@@ -76,35 +97,18 @@ public class Run {
         Department Ecology = departmentCreator.create("Екології", generateRandomHuman(), List.of(prtGroup3, prtGroup4));
         Department Biology = departmentCreator.create("Біології", generateRandomHuman(), List.of(prtGroup5, prtGroup6));
 
+        List<Department> departments = List.of(ComputerScience, SystemAnalysis, Cybersecurity,
+                ForeignLanguages, Translating, Phylosophy, Geodesy, Ecology, Biology);
 
         Faculty FIT = facultyCreator.create("Інформаційних технологій", generateRandomHuman(), List.of(ComputerScience, SystemAnalysis, Cybersecurity));
         Faculty Philology = facultyCreator.create("Філології", generateRandomHuman(), List.of(ForeignLanguages, Translating, Phylosophy));
         Faculty NatureSciences = facultyCreator.create("Природничих наук та технологій", generateRandomHuman(), List.of(Geodesy, Ecology, Biology));
 
+        List<Faculty> faculties = List.of(FIT, Philology, NatureSciences);
 
-        University university = universityCreator.create("Дніпровська політехніка", generateRandomHuman(), List.of(FIT, Philology,NatureSciences));
+        University university = universityCreator.create("Дніпровська політехніка", generateRandomHuman(), faculties);
+
         printUniversityDetails(university);
-
-    }
-    public static void printUniversityDetails(University university){
-        System.out.println("Університет: " + university.getName());
-        System.out.println("Голова університету: " + university.getHead());
-        for (Faculty faculty : university.getFaculties()) {
-            System.out.println("Факультет: " + faculty.getName());
-            System.out.println("Голова факультету: " + faculty.getHead());
-            for (Department department : faculty.getDepartments()) {
-                System.out.println("Кафедра: " + department.getName());
-                System.out.println("Голова кафедри: " + department.getHead());
-                for (Group group : department.getGroups()) {
-                    System.out.println("Група: " + group.getName());
-                    System.out.println("Голова групи: " + group.getHead());
-                }
-            }
-        }
-    }
-
-    public static void main(String[] args) {
-        createTypicalUniversity();
 
     }
 }

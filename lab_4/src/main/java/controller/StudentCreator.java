@@ -1,7 +1,8 @@
-package main.java.controller;
-import main.java.model.Student;
-import main.java.model.Sex;
+package controller;
 
+
+import model.Sex;
+import model.Student;
 
 public class StudentCreator {
 

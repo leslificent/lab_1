@@ -1,13 +1,13 @@
-package main.java.controller;
-import main.java.model.Group;
-import main.java.model.Human;
-import main.java.model.Student;
-import main.java.model.Sex;
+package controller;
 
+import model.Group;
+import model.Human;
+import model.Sex;
+import model.Student;
 
 import java.util.List;
 
-public class GroupCreator implements Creator<Group, Student>{
+public class GroupCreator implements Creator<Group, Student> {
     private final StudentCreator studentCreator;
 
     public GroupCreator() {

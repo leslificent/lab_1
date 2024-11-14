@@ -1,7 +1,11 @@
-package main.java.model;
+package model;
+
+import lombok.EqualsAndHashCode;
+
 import java.util.List;
+import java.util.Objects;
 
-
+@EqualsAndHashCode
 public class Group {
     private String name;
     private Human head;
@@ -25,4 +29,6 @@ public class Group {
     public List<Student> getStudents() {
         return students;
     }
+
 }
+

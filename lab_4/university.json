@@ -1,0 +1,261 @@
+{
+  "name": "Дніпровська політехніка",
+  "head": {
+    "firstName": "Марія",
+    "lastName": "Іваненко",
+    "patronymic": "Іванівна",
+    "sex": "MALE"
+  },
+  "faculties": [
+    {
+      "name": "Інформаційних технологій",
+      "head": {
+        "firstName": "Олександр",
+        "lastName": "Ковальчук",
+        "patronymic": "Іванівна",
+        "sex": "FEMALE"
+      },
+      "departments": [
+        {
+          "name": "Комп\u0027ютерних наук",
+          "head": {
+            "firstName": "Марія",
+            "lastName": "Бойко",
+            "patronymic": "Сергіївна",
+            "sex": "FEMALE"
+          },
+          "groups": [
+            {
+              "name": "121-21-1",
+              "head": {
+                "firstName": "Марія",
+                "lastName": "Кравченко",
+                "patronymic": "Андріївна",
+                "sex": "MALE"
+              },
+              "students": [
+                {
+                  "firstName": "Name0",
+                  "lastName": "Surname0",
+                  "patronymic": "Middle0",
+                  "sex": "MALE"
+                },
+                {
+                  "firstName": "Name1",
+                  "lastName": "Surname1",
+                  "patronymic": "Middle1",
+                  "sex": "FEMALE"
+                }
+              ]
+            },
+            {
+              "name": "121-21-2",
+              "head": {
+                "firstName": "Іван",
+                "lastName": "Семенюк",
+                "patronymic": "Іванівна",
+                "sex": "MALE"
+              },
+              "students": [
+                {
+                  "firstName": "Name0",
+                  "lastName": "Surname0",
+                  "patronymic": "Middle0",
+                  "sex": "MALE"
+                },
+                {
+                  "firstName": "Name1",
+                  "lastName": "Surname1",
+                  "patronymic": "Middle1",
+                  "sex": "FEMALE"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Системного аналізу",
+          "head": {
+            "firstName": "Іван",
+            "lastName": "Лисенко",
+            "patronymic": "Іванівна",
+            "sex": "FEMALE"
+          },
+          "groups": [
+            {
+              "name": "124-21-1",
+              "head": {
+                "firstName": "Ольга",
+                "lastName": "Кравченко",
+                "patronymic": "Сергіївна",
+                "sex": "MALE"
+              },
+              "students": [
+                {
+                  "firstName": "Name0",
+                  "lastName": "Surname0",
+                  "patronymic": "Middle0",
+                  "sex": "MALE"
+                },
+                {
+                  "firstName": "Name1",
+                  "lastName": "Surname1",
+                  "patronymic": "Middle1",
+                  "sex": "MALE"
+                }
+              ]
+            },
+            {
+              "name": "124-21-2",
+              "head": {
+                "firstName": "Олександр",
+                "lastName": "Лисенко",
+                "patronymic": "Олександрівна",
+                "sex": "FEMALE"
+              },
+              "students": [
+                {
+                  "firstName": "Name0",
+                  "lastName": "Surname0",
+                  "patronymic": "Middle0",
+                  "sex": "FEMALE"
+                },
+                {
+                  "firstName": "Name1",
+                  "lastName": "Surname1",
+                  "patronymic": "Middle1",
+                  "sex": "FEMALE"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Філології",
+      "head": {
+        "firstName": "Іван",
+        "lastName": "Семенюк",
+        "patronymic": "Сергіївна",
+        "sex": "FEMALE"
+      },
+      "departments": [
+        {
+          "name": "Іноземних мов",
+          "head": {
+            "firstName": "Ольга",
+            "lastName": "Кравченко",
+            "patronymic": "Андріївна",
+            "sex": "MALE"
+          },
+          "groups": [
+            {
+              "name": "073-21-1",
+              "head": {
+                "firstName": "Ольга",
+                "lastName": "Ковальчук",
+                "patronymic": "Іванович",
+                "sex": "FEMALE"
+              },
+              "students": [
+                {
+                  "firstName": "Name0",
+                  "lastName": "Surname0",
+                  "patronymic": "Middle0",
+                  "sex": "FEMALE"
+                },
+                {
+                  "firstName": "Name1",
+                  "lastName": "Surname1",
+                  "patronymic": "Middle1",
+                  "sex": "FEMALE"
+                }
+              ]
+            },
+            {
+              "name": "073-21-2",
+              "head": {
+                "firstName": "Марія",
+                "lastName": "Кравченко",
+                "patronymic": "Сергіївна",
+                "sex": "MALE"
+              },
+              "students": [
+                {
+                  "firstName": "Name0",
+                  "lastName": "Surname0",
+                  "patronymic": "Middle0",
+                  "sex": "MALE"
+                },
+                {
+                  "firstName": "Name1",
+                  "lastName": "Surname1",
+                  "patronymic": "Middle1",
+                  "sex": "FEMALE"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Перекладу",
+          "head": {
+            "firstName": "Петро",
+            "lastName": "Іваненко",
+            "patronymic": "Петрович",
+            "sex": "FEMALE"
+          },
+          "groups": [
+            {
+              "name": "035-21-1",
+              "head": {
+                "firstName": "Ольга",
+                "lastName": "Кравченко",
+                "patronymic": "Петрович",
+                "sex": "FEMALE"
+              },
+              "students": [
+                {
+                  "firstName": "Name0",
+                  "lastName": "Surname0",
+                  "patronymic": "Middle0",
+                  "sex": "MALE"
+                },
+                {
+                  "firstName": "Name1",
+                  "lastName": "Surname1",
+                  "patronymic": "Middle1",
+                  "sex": "FEMALE"
+                }
+              ]
+            },
+            {
+              "name": "035-21-2",
+              "head": {
+                "firstName": "Олександр",
+                "lastName": "Бойко",
+                "patronymic": "Олександрівна",
+                "sex": "MALE"
+              },
+              "students": [
+                {
+                  "firstName": "Name0",
+                  "lastName": "Surname0",
+                  "patronymic": "Middle0",
+                  "sex": "MALE"
+                },
+                {
+                  "firstName": "Name1",
+                  "lastName": "Surname1",
+                  "patronymic": "Middle1",
+                  "sex": "MALE"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

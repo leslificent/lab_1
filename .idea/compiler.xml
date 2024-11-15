@@ -1,14 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <excludeFromCompile>
+      <directory url="file://$PROJECT_DIR$/laba_5/src/main/resources/archetype-resources" includeSubdirectories="true" />
+    </excludeFromCompile>
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="primary-source" />
+        <module name="servlet" />
+        <module name="ear" />
         <module name="lab_0.idea" />
+        <module name="ejbs" />
+        <module name="logging" />
+        <module name="laba_5" />
         <module name="lab_4" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="laba_6" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>

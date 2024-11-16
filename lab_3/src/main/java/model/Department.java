@@ -12,7 +12,6 @@ public class Department {
         this.groups = groups;
     }
 
-    // Getters and setters
     public String getName() {
         return name;
     }

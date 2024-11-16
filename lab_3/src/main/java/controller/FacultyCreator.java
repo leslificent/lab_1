@@ -19,7 +19,6 @@ public class FacultyCreator implements Creator<Faculty, Department> {
         return new Faculty(name, head, departments != null ? departments : List.of());
     }
 
-    // Можливість створення кафедри
     public Department createDepartment(String name, Human head, List<Group> groups) {
         return departmentCreator.create(name, head, groups);
     }

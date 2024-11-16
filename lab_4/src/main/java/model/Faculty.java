@@ -16,7 +16,6 @@ public class Faculty {
         this.departments = departments;
     }
 
-    // Getters and setters
     public String getName() {
         return name;
     }

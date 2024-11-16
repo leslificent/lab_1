@@ -18,7 +18,6 @@ public class DepartmentCreator implements Creator<Department, Group> {
         return new Department(name, head, groups != null ? groups : List.of());
     }
 
-    // Можливість створення кафедри
     public Group createGroup(String name, Human head, List<Student> students) {
         return groupCreator.create(name, head, students);
     }

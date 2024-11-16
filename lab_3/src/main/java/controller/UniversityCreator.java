@@ -17,7 +17,6 @@ public class UniversityCreator implements Creator<University, Faculty> {
         return new University(name, head, faculties != null ? faculties : List.of());
     }
 
-    // Можливість створення факультету
     public Faculty createFaculty(String name, Human head, List<Department> departments) {
         return facultyCreator.create(name, head, departments);
     }

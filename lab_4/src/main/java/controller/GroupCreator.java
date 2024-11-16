@@ -19,7 +19,6 @@ public class GroupCreator implements Creator<Group, Student> {
         return new Group(name, head, students != null ? students : List.of());
     }
 
-    // Можливість створення кафедри
     public Student createStudent(String firstName, String lastName, String patronymic, Sex sex) {
         return studentCreator.create(firstName, lastName, patronymic, sex);
     }

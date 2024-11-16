@@ -12,7 +12,7 @@ public class DepartmentCreator implements Creator<Department, Group>{
     private final GroupCreator groupCreator;
 
     public DepartmentCreator() {
-        this.groupCreator = new GroupCreator(); // Створення контролера для кафедр
+        this.groupCreator = new GroupCreator(); 
     }
 
     @Override
@@ -20,7 +20,6 @@ public class DepartmentCreator implements Creator<Department, Group>{
         return new Department(name, head, groups != null ? groups : List.of());
     }
 
-    // Можливість створення кафедри
     public Group createGroup(String name, Human head, List<Student> students) {
         return groupCreator.create(name, head, students);
     }

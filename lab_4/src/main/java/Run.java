@@ -26,7 +26,7 @@ public class Run {
         Random random = new Random();
 
         for (int i = 0; i < count; i++) {
-            String firstName = "Name" + i; // Замінити на рандомну генерацію імен
+            String firstName = "Name" + i;
             String lastName = "Surname" + i;
             String middleName = "Middle" + i;
             Sex gender = random.nextBoolean() ? Sex.MALE : Sex.FEMALE;
@@ -56,7 +56,6 @@ public class Run {
     }
 
     public static void main(String[] args) {
-        // Створюємо об'єкти контролерів
         UniversityCreator universityCreator = new UniversityCreator();
         FacultyCreator facultyCreator = new FacultyCreator();
         DepartmentCreator departmentCreator = new DepartmentCreator();

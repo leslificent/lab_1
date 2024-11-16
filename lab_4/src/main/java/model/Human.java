@@ -18,7 +18,6 @@ public class Human {
         this.sex = sex;
     }
 
-    // Getters and setters
     public String getFullName() {
         return firstName + " " + lastName + " " + patronymic;
     }

@@ -13,7 +13,6 @@ public class Group {
         this.students = students;
     }
 
-    // Getters and setters
     public String getName() {
         return name;
     }

@@ -32,15 +32,15 @@ public class AppTest {
         Group group7 = groupCreator.create("035-21-1", generateRandomHuman(), generateRandomStudents(2));
         Group group8 = groupCreator.create("035-21-2", generateRandomHuman(), generateRandomStudents(2));
 
-        Department department1 = departmentCreator.create("Комп'ютерних наук", generateRandomHuman(), List.of(group1, group2));
-        Department department2 = departmentCreator.create("Системного аналізу", generateRandomHuman(), List.of(group3, group4));
-        Department department3 = departmentCreator.create("Іноземних мов", generateRandomHuman(), List.of(group5, group6));
-        Department department4 = departmentCreator.create("Перекладу", generateRandomHuman(), List.of(group7, group8));
+        Department department1 = departmentCreator.create("Computer Science", generateRandomHuman(), List.of(group1, group2));
+        Department department2 = departmentCreator.create("System Analysis", generateRandomHuman(), List.of(group3, group4));
+        Department department3 = departmentCreator.create("Foreign Languages", generateRandomHuman(), List.of(group5, group6));
+        Department department4 = departmentCreator.create("Translating", generateRandomHuman(), List.of(group7, group8));
 
-        Faculty faculty1 = facultyCreator.create("Інформаційних технологій", generateRandomHuman(), List.of(department1, department2));
-        Faculty faculty2 = facultyCreator.create("Філології", generateRandomHuman(), List.of(department3, department4));
+        Faculty faculty1 = facultyCreator.create("FIT", generateRandomHuman(), List.of(department1, department2));
+        Faculty faculty2 = facultyCreator.create("Philology", generateRandomHuman(), List.of(department3, department4));
 
-        University oldUniversity = universityCreator.create("Дніпровська політехніка", generateRandomHuman(), List.of(faculty1, faculty2));
+        University oldUniversity = universityCreator.create("NTU DP", generateRandomHuman(), List.of(faculty1, faculty2));
 
         String filePath = "university.json";
         JsonManager.saveUniversityToJson(oldUniversity, filePath);

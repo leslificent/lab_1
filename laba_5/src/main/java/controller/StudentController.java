@@ -23,27 +23,27 @@ public class StudentController {
                     break;
 
                 case 2:
-                    System.out.print("Введіть номер місяця народження (1-12): ");
+                    System.out.print("Enter a birthmonth (1-12): ");
                     getAndPrintStudentsByBirthMonth(scanner);
                     break;
 
                 case 3:
-                    System.out.println("Завершення роботи програми...");
+                    System.out.println("The program is over...");
                     scanner.close();
                     return;
 
                 default:
-                    System.out.println("Невірний вибір. Спробуйте ще раз.");
+                    System.out.println("Wrong choice. Try again.");
             }
         }
     }
 
     private static void printProgramStartupMessage() {
-        System.out.println("Оберіть дію:");
-        System.out.println("1. Вивести всіх студентів");
-        System.out.println("2. Вивести студентів по місяцю народження");
-        System.out.println("3. Завершити роботу програми");
-        System.out.print("Введіть цифру (1, 2, або 3): ");
+        System.out.println("Choose action:");
+        System.out.println("1. Show all students");
+        System.out.println("2. Show students by birthmonth");
+        System.out.println("3. Over the program");
+        System.out.print("Enter a number (1, 2, or 3): ");
     }
 
     private static void getAndPrintStudentsByBirthMonth(Scanner scanner) {
@@ -53,7 +53,7 @@ public class StudentController {
             printAllStudents(studentsByMonth);
             return;
         } else {
-            System.out.println("Невірний номер місяця.");
+            System.out.println("Wrong number of month.");
         }
     }
 

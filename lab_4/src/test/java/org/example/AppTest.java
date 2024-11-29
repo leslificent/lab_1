@@ -53,10 +53,10 @@ public class AppTest {
     public static Human generateRandomHuman() {
         Random random = new Random();
 
-        String[] firstNames = {"Олександр", "Іван", "Марія", "Анна", "Петро", "Ольга"};
-        String[] lastNames = {"Ковальчук", "Іваненко", "Семенюк", "Бойко", "Лисенко", "Кравченко"};
-        String[] middleNames = {"Іванович", "Петрович", "Олександрівна", "Іванівна", "Сергіївна", "Андріївна"};
-
+        String[] firstNames = {"Alex", "John", "Mary", "Hanna", "Peter", "Kate"};
+        String[] lastNames = {"Macminamen", "Rurk", "Smith", "Bolchiko", "Limon", "Polombok"};
+        String[] middleNames = {"Victorovich", "Petrovich", "Olexandrivna", "Ivanivna", "Cerhiivna", "Andriivna"};
+        
         String firstName = firstNames[random.nextInt(firstNames.length)];
         String lastName = lastNames[random.nextInt(lastNames.length)];
         String middleName = middleNames[random.nextInt(middleNames.length)];

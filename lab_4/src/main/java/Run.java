@@ -105,7 +105,7 @@ public class Run {
 
         List<Faculty> faculties = List.of(FIT, Philology, NatureSciences);
 
-        University university = universityCreator.create("Дніпровська політехніка", generateRandomHuman(), faculties);
+        University university = universityCreator.create("NTU DP", generateRandomHuman(), faculties);
 
         printUniversityDetails(university);
 

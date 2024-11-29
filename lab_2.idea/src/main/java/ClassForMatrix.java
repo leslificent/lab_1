@@ -11,19 +11,19 @@ public class ClassForMatrix {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Введіть кількість рядків матриці (max 20): ");
+        System.out.print("enter the number of matrix rows (max 20): ");
         int rows = scanner.nextInt();
-        System.out.print("Введіть кількість стовпців матриці (max 20): ");
+        System.out.print("enter the number of matrix columns (max 20): ");
         int cols = scanner.nextInt();
 
         if (rows > 20 || cols > 20) {
-            System.out.println("Максимальний розмір матриці 20x20.");
+            System.out.println("Max matrix size 20x20.");
             return;
         }
 
         int[][] matrix = new int[rows][cols];
 
-        System.out.print("Виберіть спосіб заповнення матриці (1 - вручну, 2 - випадкові числа): ");
+        System.out.print("Choose the way to fill matrix (1 - manually, 2 - random): ");
         int choice = scanner.nextInt();
 
         if (choice == 1) {
@@ -31,11 +31,11 @@ public class ClassForMatrix {
         } else if (choice == 2) {
             fillMatrixRandomly(matrix);
         } else {
-            System.out.println("Невірний вибір.");
+            System.out.println("Wrong answer");
             return;
         }
 
-        System.out.println("Ваша матриця:");
+        System.out.println("Your matrix:");
         printMatrix(matrix);
 
         int min = findMin(matrix);
@@ -43,16 +43,16 @@ public class ClassForMatrix {
         double average = calculateArithmeticMean(matrix);
         double geometricMean = calculateGeometricMean(matrix);
 
-        System.out.println("Мінімальне значення: " + min);
-        System.out.println("Максимальне значення: " + max);
-        System.out.println("Середнє арифметичне: " + average);
-        System.out.println("Середнє геометричне: " + geometricMean);
+        System.out.println("Min: " + min);
+        System.out.println("Max: " + max);
+        System.out.println("Average (arifmetics): " + average);
+        System.out.println("Average (geometric): " + geometricMean);
     }
 
     public static void fillMatrixManually(int[][] matrix, Scanner scanner) {
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
-                System.out.print("Введіть елемент [" + i + "][" + j + "]: ");
+                System.out.print("enter an item [" + i + "][" + j + "]: ");
                 matrix[i][j] = scanner.nextInt();
             }
         }

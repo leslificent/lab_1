@@ -10,9 +10,9 @@ public class Run {
     public static Human generateRandomHuman() {
         Random random = new Random();
 
-        String[] firstNames = {"Олександр", "Іван", "Марія", "Анна", "Петро", "Ольга"};
-        String[] lastNames = {"Ковальчук", "Іваненко", "Семенюк", "Бойко", "Лисенко", "Кравченко"};
-        String[] middleNames = {"Іванович", "Петрович", "Олександрівна", "Іванівна", "Сергіївна", "Андріївна"};
+        String[] firstNames = {"Alex", "John", "Mary", "Hanna", "Peter", "Kate"};
+        String[] lastNames = {"Macminamen", "Rurk", "Smith", "Bolchiko", "Limon", "Polombok"};
+        String[] middleNames = {"Victorovich", "Petrovich", "Olexandrivna", "Ivanivna", "Cerhiivna", "Andriivna"};
 
         String firstName = firstNames[random.nextInt(firstNames.length)];
         String lastName = lastNames[random.nextInt(lastNames.length)];
@@ -66,38 +66,38 @@ public class Run {
         Group prtGroup6 = groupCreator.create("101-21-1", generateRandomHuman(), generateRandomStudents(20));
 
 
-        Department ComputerScience = departmentCreator.create("Комп'ютерних наук", generateRandomHuman(), List.of(fitGroup1, fitGroup2));
-        Department SystemAnalysis = departmentCreator.create("Системного аналізу", generateRandomHuman(), List.of(fitGroup3, fitGroup4));
-        Department Cybersecurity = departmentCreator.create("Кібербезпеки", generateRandomHuman(), List.of(fitGroup5, fitGroup6));
-        Department ForeignLanguages = departmentCreator.create("Іноземних мов", generateRandomHuman(), List.of(philGroup1, philGroup2));
-        Department Translating = departmentCreator.create("Перекладу", generateRandomHuman(), List.of(philGroup3, philGroup4));
-        Department Phylosophy = departmentCreator.create("Філософії та педагогіки", generateRandomHuman(), List.of(philGroup5, philGroup6));
-        Department Geodesy = departmentCreator.create("Геодезії", generateRandomHuman(), List.of(prtGroup1, prtGroup2));
-        Department Ecology = departmentCreator.create("Екології", generateRandomHuman(), List.of(prtGroup3, prtGroup4));
-        Department Biology = departmentCreator.create("Біології", generateRandomHuman(), List.of(prtGroup5, prtGroup6));
+        Department ComputerScience = departmentCreator.create("Computer Science", generateRandomHuman(), List.of(fitGroup1, fitGroup2));
+        Department SystemAnalysis = departmentCreator.create("System Analysis", generateRandomHuman(), List.of(fitGroup3, fitGroup4));
+        Department Cybersecurity = departmentCreator.create("Cybersecurity", generateRandomHuman(), List.of(fitGroup5, fitGroup6));
+        Department ForeignLanguages = departmentCreator.create("Foreign Languages", generateRandomHuman(), List.of(philGroup1, philGroup2));
+        Department Translating = departmentCreator.create("Translating", generateRandomHuman(), List.of(philGroup3, philGroup4));
+        Department Phylosophy = departmentCreator.create("Phylosophy", generateRandomHuman(), List.of(philGroup5, philGroup6));
+        Department Geodesy = departmentCreator.create("Geodesy", generateRandomHuman(), List.of(prtGroup1, prtGroup2));
+        Department Ecology = departmentCreator.create("Ecology", generateRandomHuman(), List.of(prtGroup3, prtGroup4));
+        Department Biology = departmentCreator.create("Biology", generateRandomHuman(), List.of(prtGroup5, prtGroup6));
 
 
-        Faculty FIT = facultyCreator.create("Інформаційних технологій", generateRandomHuman(), List.of(ComputerScience, SystemAnalysis, Cybersecurity));
-        Faculty Philology = facultyCreator.create("Філології", generateRandomHuman(), List.of(ForeignLanguages, Translating, Phylosophy));
-        Faculty NatureSciences = facultyCreator.create("Природничих наук та технологій", generateRandomHuman(), List.of(Geodesy, Ecology, Biology));
+        Faculty FIT = facultyCreator.create("FIT", generateRandomHuman(), List.of(ComputerScience, SystemAnalysis, Cybersecurity));
+        Faculty Philology = facultyCreator.create("Philology", generateRandomHuman(), List.of(ForeignLanguages, Translating, Phylosophy));
+        Faculty NatureSciences = facultyCreator.create("NatureSciences", generateRandomHuman(), List.of(Geodesy, Ecology, Biology));
 
 
-        University university = universityCreator.create("Дніпровська політехніка", generateRandomHuman(), List.of(FIT, Philology,NatureSciences));
+        University university = universityCreator.create("NTU DP", generateRandomHuman(), List.of(FIT, Philology,NatureSciences));
         printUniversityDetails(university);
 
     }
     public static void printUniversityDetails(University university){
-        System.out.println("Університет: " + university.getName());
-        System.out.println("Голова університету: " + university.getHead());
+        System.out.println("University: " + university.getName());
+        System.out.println("The head of university: " + university.getHead());
         for (Faculty faculty : university.getFaculties()) {
-            System.out.println("Факультет: " + faculty.getName());
-            System.out.println("Голова факультету: " + faculty.getHead());
+            System.out.println("Faculty: " + faculty.getName());
+            System.out.println("The head of Faculty: " + faculty.getHead());
             for (Department department : faculty.getDepartments()) {
-                System.out.println("Кафедра: " + department.getName());
-                System.out.println("Голова кафедри: " + department.getHead());
+                System.out.println("Department: " + department.getName());
+                System.out.println("The head of Department: " + department.getHead());
                 for (Group group : department.getGroups()) {
-                    System.out.println("Група: " + group.getName());
-                    System.out.println("Голова групи: " + group.getHead());
+                    System.out.println("Group: " + group.getName());
+                    System.out.println("The head of Group: " + group.getHead());
                 }
             }
         }
